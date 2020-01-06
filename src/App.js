@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-        timothybowenzheng
+    <div className="Home-parent">
+        <div className="Home-child">
+            Work in Progress
+        </div>
     </div>
   );
 }
