@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/timothybowenzheng/static/css/main.d1b05096.chunk.css",
+    "main.js": "/timothybowenzheng/static/js/main.aa96b734.chunk.js",
+    "main.js.map": "/timothybowenzheng/static/js/main.aa96b734.chunk.js.map",
+    "runtime-main.js": "/timothybowenzheng/static/js/runtime-main.89283707.js",
+    "runtime-main.js.map": "/timothybowenzheng/static/js/runtime-main.89283707.js.map",
+    "static/js/2.73fe530e.chunk.js": "/timothybowenzheng/static/js/2.73fe530e.chunk.js",
+    "static/js/2.73fe530e.chunk.js.map": "/timothybowenzheng/static/js/2.73fe530e.chunk.js.map",
+    "index.html": "/timothybowenzheng/index.html",
+    "precache-manifest.872925ef17444fbfe97d083dba9048a8.js": "/timothybowenzheng/precache-manifest.872925ef17444fbfe97d083dba9048a8.js",
+    "service-worker.js": "/timothybowenzheng/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/timothybowenzheng/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.73fe530e.chunk.js.LICENSE": "/timothybowenzheng/static/js/2.73fe530e.chunk.js.LICENSE",
+    "static/media/logo.svg": "/timothybowenzheng/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.89283707.js",
+    "static/js/2.73fe530e.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.aa96b734.chunk.js"
+  ]
+}
