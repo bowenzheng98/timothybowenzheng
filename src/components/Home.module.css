@@ -1,0 +1,69 @@
+.page-layout {
+  font-family: "Inria Serif", serif;
+}
+
+.Page-child-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  max-width: 60vw;
+  height: auto;
+}
+
+.animated {
+  transition: transform 1s ease-in-out;
+}
+
+.moveRight {
+  transform: translateX(100%);
+}
+
+.moveLeft {
+  transform: translateX(-100%);
+}
+
+.moveDown {
+  transform: translateY(100vh);
+}
+
+.moveUp {
+  transform: translateY(-100vh);
+}
+
+.centerImageContainer{
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+}
+
+.leftImageContainer{
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 100vw;
+}
+
+.rightImageContainer {
+  position: absolute;
+  width: 100vw;
+}
+
+.topImageContainer {
+  position: absolute;
+  top: -50%;
+  width: 100vw;
+}
+
+.bottomImageContainer {
+  position: absolute;
+  top: 150%;
+  width: 100vw;
+}

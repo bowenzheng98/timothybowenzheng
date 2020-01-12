@@ -1,13 +1,8 @@
-.Home-parent {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Inria Serif', serif;
-  background-color: #fffcf5;
-}
-
-.Home-child {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.Navbar{
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    z-index: 10 ;
+    bottom: 0;
+    left: 0;
 }
