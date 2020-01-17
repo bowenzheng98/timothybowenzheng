@@ -6,19 +6,24 @@ import clsx from "clsx";
 
 function Home() {
   const [animated, setAnimated] = useState(false);
-  const [originalDivPos, setOriginalDivPos] = useState(home.centerImageContainer);
-  const [offScreenDivPos, setOffScreenDivPos] = useState(home.leftImageContainer);
+  const [pos1, setPos1] = useState(home.centerImageContainer);
+  const [pos2, setPos2] = useState(home.leftImageContainer);
 
   function handleClick() {
     setAnimated(!animated);
+    setTimeout(() => {
+      setPos1(home.leftImageContainer);
+      setPos2(home.centerImageContainer);
+      setAnimated(false);
+    }, 1000);
   }
 
   return (
     <div className="page-layout">
       <div
         className={clsx(
-          home.centerImageContainer,
-          home.animated,
+          pos1, 
+          animated ? home.animated : null,
           animated ? home.moveRight : null,
         )}
       >
@@ -26,8 +31,8 @@ function Home() {
       </div>
       <div
         className={clsx(
-          home.leftImageContainer,
-          home.animated,
+          pos2,
+          animated? home.animated : null,
           animated ? home.moveRight : null,
         )}
       >
