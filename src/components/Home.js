@@ -20,7 +20,6 @@ function Home() {
 
   function handleClick() {
     setAnimated(true);
-    console.log("Moving " + nextMove);
     switch (nextMove) {
       case 0:
         setMoveRight(true);
@@ -39,9 +38,7 @@ function Home() {
     }
     setTimeout(() => {
       var randomnumber = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
-      console.log("Random number is :" + randomnumber);
       setNextMove(randomnumber);
-      console.log("nextMove is: " + nextMove);
       if (pos1Visible) {
         setPos2(home.centerImageContainer);
         switch (randomnumber) {
