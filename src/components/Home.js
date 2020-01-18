@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import home from "./Home.module.css";
-import image from "./brandsboard.png";
-import art from "./art-board.png";
+import disgusting from "./disgusting.png";
+import erdamiri from "./erdamiri.png";
+import hollow from "./hollow.png";
+import ngg from "./ngg.png";
 import clsx from "clsx";
 
 function Home() {
+  const images = [ngg, erdamiri, disgusting, hollow];
+  const [imagesIndex, setImagesIndex] = useState(2);
+
+  const [pos1Image, setPos1Image] = useState(images[0]);
+  const [pos2Image, setPos2Image] = useState(images[1]);
+
   const [nextMove, setNextMove] = useState(0);
   const [animated, setAnimated] = useState(false);
 
@@ -57,6 +65,12 @@ function Home() {
           default:
             break;
         }
+        setPos1Image(images[imagesIndex]);
+        if (imagesIndex < 3) {
+          setImagesIndex(imagesIndex + 1);
+        } else {
+          setImagesIndex(0);
+        }
       } else {
         setPos1(home.centerImageContainer);
         switch (randomnumber) {
@@ -74,6 +88,12 @@ function Home() {
             break;
           default:
             break;
+        }
+        setPos2Image(images[imagesIndex]);
+        if (imagesIndex < 3) {
+          setImagesIndex(imagesIndex + 1);
+        } else {
+          setImagesIndex(0);
         }
       }
       setAnimated(false);
@@ -97,7 +117,7 @@ function Home() {
           moveDown ? home.moveDown : null,
         )}
       >
-        <img src={image} onClick={handleClick} alt=""></img>
+        <img src={pos1Image} onClick={handleClick} alt=""></img>
       </div>
       <div
         className={clsx(
@@ -109,7 +129,7 @@ function Home() {
           moveDown ? home.moveDown : null,
         )}
       >
-        <img src={art} onClick={handleClick} alt=""></img>
+        <img src={pos2Image} onClick={handleClick} alt=""></img>
       </div>
     </div>
   );
