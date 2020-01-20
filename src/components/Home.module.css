@@ -14,7 +14,7 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  max-width: 60vw;
+  max-width: 80vw;
   height: auto;
 }
 

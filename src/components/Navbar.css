@@ -1,4 +1,13 @@
-.navbar {
+.upper-navbar {
+  width: 100vw;
+  height: 2.5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.lower-navbar {
   width: 100vw;
   height: 2.5vw;
   position: absolute;
@@ -29,11 +38,15 @@ a {
 .navbar-left-item{
   margin-right: 1em;
   margin-left: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   float: left;
 }
 
 .navbar-right-item{
+  margin-top: 0.5em;
   margin-right: 1em;
   margin-left: 1em;
+  margin-bottom: 0.5em;
   float: right;
 }

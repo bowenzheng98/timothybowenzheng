@@ -1,11 +1,10 @@
-.Page-layout {
-    font-family: "Inria Serif", serif;
-  }
-  
-  .Page-child-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+.pagelayout {
+  font-family: "Inria Serif", serif;
+}
+
+.pageChildCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
