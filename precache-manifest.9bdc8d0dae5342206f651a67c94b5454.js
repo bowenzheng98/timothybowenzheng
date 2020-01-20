@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d7428836231f15673ad1f94a8a9824e",
+    "revision": "94587e96963b88ba721394e337e7768b",
     "url": "/index.html"
   },
   {
-    "revision": "79ca846bebc48070931a",
-    "url": "/static/css/main.2769ca97.chunk.css"
+    "revision": "80e1c11c8fc61f8526e4",
+    "url": "/static/css/main.34261d6d.chunk.css"
   },
   {
-    "revision": "d6b2703e8d89b8b855dc",
-    "url": "/static/js/2.c368a26f.chunk.js"
+    "revision": "2af661aaf83a27eea0a4",
+    "url": "/static/js/2.5050390d.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/static/js/2.c368a26f.chunk.js.LICENSE"
+    "url": "/static/js/2.5050390d.chunk.js.LICENSE"
   },
   {
-    "revision": "79ca846bebc48070931a",
-    "url": "/static/js/main.6a431d99.chunk.js"
+    "revision": "80e1c11c8fc61f8526e4",
+    "url": "/static/js/main.6f18709e.chunk.js"
   },
   {
     "revision": "e3fed2240e5164963e42",
     "url": "/static/js/runtime-main.4ed84262.js"
+  },
+  {
+    "revision": "6b17ace1da49411ae3e1a98c928ff0f1",
+    "url": "/static/media/brandsboard.6b17ace1.png"
   },
   {
     "revision": "e4dda7bfd4ea423e50b7cbba4d290f2e",
