@@ -6,7 +6,6 @@ function About() {
     return(
         <div className="pagelayout">
             <div className="pageChildCenter">
-                About me
                 <img src={art}></img>
             </div>
         </div>
