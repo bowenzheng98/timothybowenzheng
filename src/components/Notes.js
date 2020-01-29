@@ -12,6 +12,7 @@ function Notes() {
           Confusion<br /><br />
           Hollow, Empty<br /><br />
           A cycle of menswear consumption<br /><br />
+          ** Everything is intentional<br /><br />
         </p>
       </div>
     </div>
