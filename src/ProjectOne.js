@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
+import "./ProjectOne.css";
 import { BrowserRouter, Route } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Notes from "./components/Notes";
 
-function App() {
+function ProjectOne() {
   return (
     <BrowserRouter>
       <Navbar />
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProjectOne;
