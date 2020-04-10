@@ -1,9 +1,9 @@
 import React from "react";
+import "./ProjectTwoCarousel.css"
 
 function Carousel() {
     return (
-        <div>
-            div here
+        <div className="carousel-placeholder">
         </div>
     )
 }

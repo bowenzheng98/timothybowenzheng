@@ -6,16 +6,18 @@ function ProjectTwo() {
     return (
         <div className="center-element">
             <div className="center-content">
-                <div>Title</div>
-                <div className="row-container">
-                    <div className="row-item">
+                <h1 className="project-title">Control, Uncontrol</h1>
+                <div className="menu-container">
+                    <div className={`menu-item from-left`}>
                         Project
                     </div>
-                    <div className="row-item">
+                    <div className={`menu-item from-left`}>
                         About
                     </div>
                 </div>
-                <Carousel></Carousel>
+                <div className="carousel-container">
+                    <Carousel></Carousel>
+                </div>
             </div>
         </div>
     )
