@@ -16,7 +16,7 @@ function Home() {
   const [nextMove, setNextMove] = useState(0);
   const [animated, setAnimated] = useState(false);
 
-  const [moveRight, setMoveRight] = useState(false);
+  const [moveRight, setMoveRight] = useState(false);  
   const [moveLeft, setMoveLeft] = useState(false);
   const [moveDown, setMoveDown] = useState(false);
   const [moveUp, setMoveUp] = useState(false);

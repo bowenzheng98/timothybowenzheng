@@ -1,32 +1,38 @@
 :root {
     --title-in-time: 2s;
+    --menu-in-time: 1.3s;
   }
 
-.center-element {
+.centerElement {
   height: 100vh;
   width: 100vw;
   position: relative;
 }
 
-.center-content {
+.centerContent {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -58%);
+  transform: translate(-50%, -55%);
   text-align: center;
 }
 
-.menu-container {
+.menuContainer {
   display: inline-block;
+  animation: fadeIn linear var(--menu-in-time);
+  -webkit-animation: fadeIn linear var(--menu-in-time);
+  -moz-animation: fadeIn linear var(--menu-in-time);
+  -o-animation: fadeIn linear var(--menu-in-time);
+  -ms-animation: fadeIn linear var(--menu-in-time);
 }
 
-.menu-item {
+.menuItem {
   display: inline-block;
   margin: 0 2vw 0 2vw;
   cursor: pointer;
 }
 
-.menu-item:after {
+.menuItem:after {
   display: block;
   content: "";
   border-bottom: solid 1px #000000;
@@ -35,19 +41,24 @@
   transition: transform 250ms ease-in-out;
 }
 
-.menu-item:hover:after {
+.menuItem:hover:after {
   transform: scaleX(1);
 }
 
-.from-left:after {
+.fromLeft:after {
   transform-origin: 0% 50%;
 }
 
-.carousel-container {
+.carouselContainer {
   padding-top: 6vh;
+  animation: fadeIn linear var(--menu-in-time);
+  -webkit-animation: fadeIn linear var(--menu-in-time);
+  -moz-animation: fadeIn linear var(--menu-in-time);
+  -o-animation: fadeIn linear var(--menu-in-time);
+  -ms-animation: fadeIn linear var(--menu-in-time);
 }
 
-.project-title {
+.projectTitle {
   margin-bottom: 5vh;
   animation: fadeIn ease-in var(--title-in-time);
   -webkit-animation: fadeIn ease-in var(--title-in-time);
@@ -99,4 +110,12 @@
   100% {
     opacity: 1;
   }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.carouselSpacePadding {
+  padding-top: 6vh;
 }

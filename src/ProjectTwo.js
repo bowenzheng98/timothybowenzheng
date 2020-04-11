@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from "./components/ProjectTwoCarousel"
-import "./ProjectTwo.css"
+import style from "./ProjectTwo.module.css"
+import clsx from "clsx"
 
 function ProjectTwo() {
+
+    const [contentVisible,setContentVisible] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setContentVisible(true);
+        }, 3000)
+    })
+
     return (
-        <div className="center-element">
-            <div className="center-content">
-                <h1 className="project-title">Control, Uncontrol</h1>
-                <div className="menu-container">
-                    <div className={`menu-item from-left`}>
+        <div className={style.centerElement}>
+            <div className={style.centerContent}>
+                <h1 className={style.projectTitle}>Control, Uncontrol</h1>
+                <div className={clsx(contentVisible ? style.menuContainer : style.invisible)}>
+                    <div className={clsx(style.menuItem, style.fromLeft)}>
                         Project
                     </div>
-                    <div className={`menu-item from-left`}>
+                    <div className={clsx(style.menuItem, style.fromleft)}>
                         About
                     </div>
                 </div>
-                <div className="carousel-container">
+                <div className={clsx(contentVisible ? style.carouselContainer : style.invisible, style.carouselSpacePadding)}>
                     <Carousel></Carousel>
                 </div>
             </div>
