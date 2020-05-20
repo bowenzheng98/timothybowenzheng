@@ -10,18 +10,18 @@ function ProjectTwo() {
     useEffect(() => {
         setTimeout(() => {
             setContentVisible(true);
-        }, 3000)
+        }, 2500)
     })
 
     return (
         <div className={style.centerElement}>
             <div className={style.centerContent}>
-                <h1 className={style.projectTitle}>Control, Uncontrol</h1>
+                <h1 className={style.projectTitle}>Untitled</h1>
                 <div className={clsx(contentVisible ? style.menuContainer : style.invisible)}>
                     <div className={clsx(style.menuItem, style.fromLeft)}>
                         Project
                     </div>
-                    <div className={clsx(style.menuItem, style.fromleft)}>
+                    <div className={clsx(style.menuItem, style.fromLeft)}>
                         About
                     </div>
                 </div>
