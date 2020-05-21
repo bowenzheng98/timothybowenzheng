@@ -1,0 +1,7 @@
+.slider {
+    position: relative;
+    /* width: 35vw; */
+    /* height: 45vh; */
+    background-color: red;
+    overflow: hidden;
+}
