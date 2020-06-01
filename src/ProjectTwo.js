@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import Carousel from './components/ProjectTwoCarousel'
+import React, { useState, useEffect } from 'react'
 import style from './ProjectTwo.module.css'
 import Slider from './components/Slider'
 import clsx from "clsx"
