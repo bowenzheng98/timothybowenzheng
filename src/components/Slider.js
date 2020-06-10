@@ -26,10 +26,12 @@ const Slider = (props) => {
   const { translate, transition, activeSlide, _slides } = state
   const autoPlayRef = useRef()
   const transitionRef = useRef()
+  const resizeRef = useRef()
 
   useEffect(() => {
     autoPlayRef.current = nextSlide
     transitionRef.current = smoothTransition
+    resizeRef.current = handleResize
   })
 
   useEffect(() => {
@@ -39,12 +41,18 @@ const Slider = (props) => {
     const smooth = () => {
       transitionRef.current()
     }
+    const resize = () => {
+      resizeRef.current()
+    }
+
     const interval = setInterval(play, 3000)
     const transitionEnd = window.addEventListener('transitionend', smooth)
+    const onResize = window.addEventListener('resize', resize)
 
     return () => {
       clearInterval(interval)
       window.removeEventListener('transitionend', transitionEnd)
+      window.removeEventListener('resize', onResize)
     }
   }, [])
 
@@ -82,6 +90,10 @@ const Slider = (props) => {
       transition: 0,
       translate: 0
     })
+  }
+
+  const handleResize = () => {
+    setState({ ...state, translate: getWidth(), transition: 0 })
   }
 
   return (

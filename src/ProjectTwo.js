@@ -22,10 +22,10 @@ function ProjectTwo () {
         <h1 className={style.projectTitle}>Untitled</h1>
         <div className={clsx(contentVisible ? style.menuContainer : style.invisible)}>
           <div className={clsx(style.menuItem, style.fromLeft)}>
-                        Project
+            Project
           </div>
           <div className={clsx(style.menuItem, style.fromLeft)}>
-                        About
+            About
           </div>
         </div>
         <div className={clsx(contentVisible ? style.carouselContainer : style.invisible, style.carouselSpacePadding)}>
