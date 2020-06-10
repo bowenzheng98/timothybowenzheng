@@ -1,24 +1,23 @@
 /** @jsx jsx */
-import React, { useState, useEffect, useRef } from "react";
-import { css, jsx } from "@emotion/core";
-import SliderContent from "./SliderContent";
-import Slide from "./Slide";
+import { useState, useEffect, useRef } from 'react'
+import { css, jsx } from '@emotion/core'
+import SliderContent from './SliderContent'
+import Slide from './Slide'
 
-const getWidth = () => window.innerWidth * 0.35;
+const getWidth = () => window.innerWidth * 0.35
 
 /**
  * @function Slider
  */
 const Slider = (props) => {
+  const slides = props.slides
 
-  const { slides } = props
-
-  const firstSlide =  slides[0]
+  const firstSlide = slides[0]
   const secondSlide = slides[1]
   const lastSlide = slides[slides.length - 1]
 
   const [state, setState] = useState({
-    activeSlide: 0,
+    activeSlide: -1,
     translate: 0,
     transition: 0.45,
     _slides: [slides[firstSlide], slides[secondSlide]]
@@ -41,21 +40,22 @@ const Slider = (props) => {
       transitionRef.current()
     }
     const interval = setInterval(play, 3000)
-    const transitionEnd  = window.addEventListener('transitionend', smooth)
+    const transitionEnd = window.addEventListener('transitionend', smooth)
 
     return () => {
       clearInterval(interval)
       window.removeEventListener('transitionend', transitionEnd)
     }
-  },  []) //TODO add props.visible
+  }, [])
 
-  useEffect(() => { 
+  useEffect(() => {
     if (transition === 0) {
-      setState({ ...state, transition: 0.45 }) 
-    } 
+      setState({ ...state, transition: 0.45 })
+    }
   }, [transition])
 
   const nextSlide = () => {
+    console.log(activeSlide)
     setState({
       ...state,
       translate: translate + getWidth(),
@@ -69,9 +69,11 @@ const Slider = (props) => {
     // if we're at the last slide
     if (activeSlide === slides.length - 1) {
       _slides = [lastSlide, firstSlide]
-    } else if (activeSlide === 0) { //we're back at the first slide 
+    } else if (activeSlide === 0) {
+      // we're back at the first slide
       _slides = [firstSlide, secondSlide]
-    } else { //create an array of the current slide and the next slide that follows it
+    } else {
+      // create an array of the current slide and the next slide that follows it
       _slides = slides.slice(activeSlide, activeSlide + 2)
     }
     setState({
@@ -103,5 +105,5 @@ const SliderCSS = css`
   width: 35vw;
   margin: 0 auto;
   overflow: hidden;
-`;
-export default Slider;
+`
+export default Slider

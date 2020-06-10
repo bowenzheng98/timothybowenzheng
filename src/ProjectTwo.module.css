@@ -1,6 +1,7 @@
 :root {
     --title-in-time: 2s;
     --menu-in-time: 1.3s;
+    --carousel-in-time: 3.5s;
   }
 
 .centerElement {
@@ -51,11 +52,11 @@
 
 .carouselContainer {
   padding-top: 6vh;
-  animation: fadeIn linear var(--menu-in-time);
-  -webkit-animation: fadeIn linear var(--menu-in-time);
-  -moz-animation: fadeIn linear var(--menu-in-time);
-  -o-animation: fadeIn linear var(--menu-in-time);
-  -ms-animation: fadeIn linear var(--menu-in-time);
+  animation: fadeIn ease-in var(--carousel-in-time);
+  -webkit-animation: fadeIn ease-in var(--carousel-in-time);
+  -moz-animation: fadeIn ease-in var(--carousel-in-time);
+  -o-animation: fadeIn ease-in var(--carousel-in-time);
+  -ms-animation: fadeIn ease-in var(--carousel-in-time);
 }
 
 .projectTitle {
